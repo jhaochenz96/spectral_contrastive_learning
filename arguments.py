@@ -52,7 +52,7 @@ def get_args():
     parser.add_argument('--download', action='store_true', help="if can't find dataset, download from web")
     parser.add_argument('--data_dir', type=str, default='PATH_TO_DATASET')
     parser.add_argument('--dist_url', type=str, default='tcp://localhost:10001')
-    parser.add_argument('--log_dir', type=str, default='../log/spectral')
+    parser.add_argument('--log_dir', type=str, default='./log/spectral')
     parser.add_argument('--ckpt_dir', type=str, default='~/.cache/')
     parser.add_argument('--device', type=str, default='cuda' if torch.cuda.is_available() else 'cpu')
     parser.add_argument('--eval_from', type=str, default=None)
